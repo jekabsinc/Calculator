@@ -1,5 +1,5 @@
-function result(value1, value2, operator) {
-	//calculating
+function operations(value1, value2, operator) {
+	//all operation types
 	if (operator === '+') {
 		return value1 + value2;
 	} else if (operator === '-') {
@@ -13,7 +13,7 @@ function result(value1, value2, operator) {
 	};
 };
 
-function operations() {
+function calculate() {
 	//taking inputs
 	let operator = document.getElementById('operator').value;
 	let input1 = document.getElementById('first').value;
@@ -34,26 +34,16 @@ function operations() {
 	} else {
 		input2 = parseFloat(input2)
 	}
-
+	//check if inputs are numbers & give result
 	const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 	if (numbers.includes(input1) && numbers.includes(input2)) {
-		answer.innerHTML = '' + result(input1, input2, operator);
+		answer.innerHTML = '' + operations(input1, input2, operator);
 	} else {
 		answer.innerHTML = 'You should enter a number';
 		return true;
 	}
 }
 
-document.getElementById('first').addEventListener("keyup", operations);
-document.getElementById('second').addEventListener("keyup", operations);
-document.getElementById('operator').addEventListener("keyup", operations);
-
-
-
-/*
-
-if operator = +       -> add numbers
-else if operator = -    -> subtract
-else if operator = *    -> multiply
-else if operator = /    -> divide
-else                    -> insert operator*/ 
+document.getElementById('first').addEventListener("keyup", calculate);
+document.getElementById('second').addEventListener("keyup", calculate);
+document.getElementById('operator').addEventListener("keyup", calculate);
