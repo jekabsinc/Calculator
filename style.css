@@ -1,0 +1,60 @@
+body {
+	margin: 0; 
+	padding: 0;
+}
+header {
+	height: 3rem;
+	background-color: darkblue;
+	padding: auto;
+	text-align: center; 
+
+}
+h1 {
+	color: white;
+	display: block;
+	margin: auto;
+	padding-top: 0.2rem;
+}
+div {
+	background-color: lightgray;
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding-top: 1rem;
+	text-align: center; 
+}
+form {
+	background-color: white;
+	border: 2px solid darkblue;
+	border-radius: 10px;
+	margin: auto;
+	padding: 2rem;
+	width: 40%;	
+	height: 80%;
+	text-align: center; 
+}
+
+input {
+	font-size: 2rem;
+	border: 1px solid darkblue;
+	border-radius: 7px;
+}
+#operator {
+	margin: 0.5rem 0;
+	width: 4rem; 
+}
+h2 {
+	margin: 0.5rem;
+}
+#answer {
+	width: 70%;
+	min-height: 2rem;
+	position: relative;
+	margin: auto;
+	padding-top: 1rem;
+	text-align: center;
+	border: 1px solid darkblue;
+	border-radius: 7px;
+	font-weight: bold;
+}
